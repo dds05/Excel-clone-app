@@ -1,0 +1,256 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   
+   
+}
+
+html{
+    height:100vh;
+    border:1px solid green;
+}
+
+
+/* css for menu */
+.menu{
+  background-color: #65ec65;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.file-options,.formatting,.alignment{
+ width: 34%;
+ margin-top: 1px;
+ border-right: 1px solid purple;
+ height: 100%;
+
+}
+
+.file-options{
+
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+}
+
+
+.file-options>*{
+    
+    width: 32%;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    font-family: 'Domine', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
+
+}
+
+.file-options>div{
+    font-size: smaller;
+}
+
+
+.formula-bar{
+   background-color: lightcoral;
+   height: 20px;
+}
+
+.formatting> .subgroup{
+   
+    width: 45%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.formatting{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+
+}
+
+.subgroup{
+    display: flex;
+    flex-direction: column;
+
+}
+.font-size-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.color-container>*{
+    width: 47%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.color-container{
+    margin-left: 3px;
+}
+
+#font-size{
+    width: 80%;
+    margin-left: 4px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.subgroup>*{
+    height: 40%;
+    width: 90%;
+}
+
+.styleoptions>input{
+    
+    margin: 0px 2px;
+    width: 27%;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    margin-top: 2px;
+}
+
+#font-family-container{
+    margin-left: 3px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 91%;
+}
+
+.alignment{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.alignment>*{
+    width: 19%;
+    height: 1.8rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#text-color {
+    margin-left: 3px;
+}
+/*formula*/
+
+
+.formula-bar{
+    background-color:rgba(116, 255, 88, 0.687);
+
+    height:30px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+}
+.formula-bar input{
+    height:70%;   
+}   
+
+.address{
+    width:10%;
+}
+.formula-break{
+    max-width:3%;
+    min-height: 3%;
+}
+.formula{
+    width:83%;
+}
+.formula-bar .formula-break{
+    text-align: center;
+}
+/*main area*/
+.main{
+
+    
+      height: calc(100vh - 80px);
+      overflow: auto;
+      position: relative;
+}
+
+.cell{
+    border: 1px solid black;
+    height: 1.5rem;
+   width: 4rem;
+   text-align: center;
+    
+}
+
+
+.top-row{
+    background-color: #65ec65;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 64px;
+    
+    font-family: 'Domine', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
+    
+    
+}
+
+.top-left-col{
+    background-color: #65ec65;
+    width: 64px;
+    position: absolute;
+    top: 24px;
+    font-family: 'Domine', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
+    
+}
+
+.row{
+    display: flex;
+}
+
+.grid{
+    position: absolute;
+    top: 24px;
+    left: 64px;
+}
+
+.styleoptions>*:hover{
+    cursor: pointer;
+}
+
+.file-options>text:hover{
+    cursor: pointer;
+}
+
+.alignment>*:hover{
+    cursor: pointer;
+}
+
+.color-container>*:hover{
+    cursor: pointer;
+}
+
+
+#font-familiy:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.fas:hover{
+    cursor: pointer;
+}
